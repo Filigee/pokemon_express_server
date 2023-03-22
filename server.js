@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const PORT = 8000
+const PORT = 3000
 
 const pokemon = {
     "charmander": {
@@ -39,5 +39,5 @@ app.get("/api/:pokemon", (req, res) => {
 })
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log("Listening on port 8000")
+    console.log("Listening on port 3000")
 })
